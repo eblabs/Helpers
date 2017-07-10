@@ -1,1 +1,27 @@
 ffmpeg -i /folder/test.mov -r 10 -f image2pipe -vcodec ppm - | convert -delay 10 - gif:- | convert -layers OptimizeFrame - /folder/test.gif
+
+ffmpeg -i /folder/test.mov -pix_fmt rgb24 -loop 0  -framerate 10 /folder/test.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
